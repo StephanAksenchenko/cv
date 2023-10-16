@@ -1,0 +1,14 @@
+.root svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.root:hover svg {
+  fill: var(--color-accent);
+}

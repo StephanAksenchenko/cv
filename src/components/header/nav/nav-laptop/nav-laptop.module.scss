@@ -1,0 +1,47 @@
+.root {
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-default);
+  height: 100%;
+  background-color: var(--color-accent);
+  position: relative;
+  font-size: var(--font-size-default);
+}
+
+.links::before {
+  content: "";
+  display: block;
+  border: 30px solid transparent;
+  border-top: 30px solid var(--color-accent);
+  border-right: 30px solid var(--color-accent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+}
+
+.links::after {
+  content: "";
+  display: block;
+  border: 30px solid transparent;
+  border-left: 30px solid var(--color-accent);
+  border-top: 30px solid var(--color-accent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+}
+
+.link {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.link:hover {
+  display: block;
+}

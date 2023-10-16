@@ -1,0 +1,14 @@
+.settings {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--color-default);
+}
+
+.option {
+  margin-left: 12px;
+}
+
+.option:first-child {
+  margin-left: 0;
+}

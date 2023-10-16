@@ -1,0 +1,31 @@
+@import "@/src/styles/variables";
+
+.root {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--header-color);
+  backdrop-filter: blur(2px);
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (min-width: $laptop) {
+    grid-template-columns: 2fr 3fr 2fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nav {
+  align-self: stretch;
+}

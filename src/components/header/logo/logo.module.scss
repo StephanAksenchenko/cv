@@ -1,0 +1,15 @@
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: bold;
+}

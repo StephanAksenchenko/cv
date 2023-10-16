@@ -1,0 +1,13 @@
+@import "@/src/styles/variables";
+
+.root {
+  height: 100%;
+}
+
+.forLaptop {
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: initial;
+  }
+}
