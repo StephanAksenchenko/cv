@@ -1,0 +1,34 @@
+@import "@/src/styles/variables";
+
+.root {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  column-gap: 12px;
+  align-items: center;
+
+  @media (min-width: $laptop) {
+    column-gap: 20px;
+  }
+}
+
+.social svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-default);
+  transition: var(--transition);
+
+  @media (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.social:hover svg {
+  fill: var(--color-accent);
+}

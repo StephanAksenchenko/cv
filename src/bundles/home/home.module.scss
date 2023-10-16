@@ -1,0 +1,11 @@
+@import "@/src/styles/variables";
+
+.root {
+  @media (min-width: $tablet) {
+    --section-padding-x: 32px;
+  }
+
+  @media (min-width: $laptop) {
+    --section-padding-y: 96px;
+  }
+}

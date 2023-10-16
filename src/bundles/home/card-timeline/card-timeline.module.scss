@@ -1,0 +1,58 @@
+@import "@/src/styles/variables";
+
+.root {
+  padding: 48px 0 48px 12px;
+  border-left: 1px solid var(--color-accent);
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $laptop) {
+    padding-left: 24px;
+  }
+}
+
+.root::before,
+.root::after {
+  --width: 6px;
+
+  content: "";
+  display: block;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  position: absolute;
+}
+
+.root::before {
+  left: calc(-1 * var(--width) / 2);
+  top: calc(-1 * var(--width) / 2);
+}
+
+.root::after {
+  left: calc(-1 * var(--width) / 2);
+  bottom: calc(-1 * var(--width) / 2);
+}
+
+.date {
+  font-size: var(--font-size-small);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.dateStart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%) translateX(12px);
+}
+
+.dateEnd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%) translateX(12px);
+}

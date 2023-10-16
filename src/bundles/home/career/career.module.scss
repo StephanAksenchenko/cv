@@ -1,0 +1,64 @@
+@import "@/src/styles/variables";
+
+.grid {
+  display: grid;
+  row-gap: 32px;
+
+  @media (min-width: $tablet) {
+    row-gap: 48px;
+  }
+
+  @media (min-width: $laptop) {
+    row-gap: 64px;
+  }
+}
+
+.position {
+  color: var(--color-accent);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+}
+
+.positionWrapper {
+  margin-bottom: 4px;
+}
+
+.title {
+  color: var(--color-default);
+  font-size: var(--font-size-h3);
+  line-height: 140%;
+}
+
+.titleWrapper {
+  margin-bottom: 24px;
+}
+
+.responsibilities {
+  color: var(--color-secondary);
+  font-size: var(--font-size-default);
+  line-height: 140%;
+}
+
+.responsibilities li {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.responsibilities li::before {
+  display: block;
+  content: "—";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.intro {
+  color: var(--color-default);
+  font-size: var(font-size-default);
+  line-height: 140%;
+}
+
+.introWrapper {
+  margin-bottom: 24px;
+}

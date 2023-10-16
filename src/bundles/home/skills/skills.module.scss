@@ -1,0 +1,53 @@
+@import "@/src/styles/variables";
+
+.baseSkillWrapper {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-bottom: 96px;
+  }
+}
+
+.gridForProfessional {
+  display: grid;
+  row-gap: 32px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 36px;
+  }
+
+  @media (min-width: $laptop) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+}
+
+.gridForBase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $laptop) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.cellForBase:last-child:nth-child(odd) {
+  grid-column: span 2;
+
+  @media (min-width: $tablet) {
+    grid-column: initial;
+  }
+}

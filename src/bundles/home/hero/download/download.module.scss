@@ -1,0 +1,32 @@
+.download {
+  border: 2px solid var(--color-default);
+  padding: 8px 12px;
+  text-align: center;
+  color: var(--color-default);
+  text-transform: uppercase;
+  font-size: var(--font-size-default);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  fill: var(--color-default);
+}
+
+.download:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.download:hover svg {
+  fill: var(--color-accent);
+}
+
+.download:active {
+  transform: scale(0.9);
+}

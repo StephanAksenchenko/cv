@@ -1,0 +1,76 @@
+@import "@/src/styles/variables";
+
+.title {
+  color: var(--color-default);
+  font-size: var(--font-size-h3);
+}
+
+.titleWrapper {
+  margin-bottom: 20px;
+}
+
+.text {
+  color: var(--color-secondary);
+  font-size: var(--font-size-default);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.detailsWrapper p {
+  margin-bottom: 8px;
+}
+
+.detailsWrapper p:last-child {
+  margin-bottom: initial;
+}
+
+.educationHistory {
+  display: grid;
+  row-gap: 42px;
+
+  @media (min-width: $laptop) {
+    margin: 0 auto;
+    row-gap: 62px;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-color);
+
+  @media (min-width: $laptop) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-70%) translateX(24px);
+
+  @media (min-width: $laptop) {
+    transform: translateY(-70%) translateX(30px);
+  }
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-default);
+  transform: translateY(-2px);
+
+  @media (min-width: $laptop) {
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "@/src/styles/variables";
+
+.position {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-small);
+  line-height: 160%;
+  font-weight: bold;
+
+  @media (min-width: $laptop) {
+    text-align: left;
+  }
+}

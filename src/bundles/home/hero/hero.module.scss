@@ -1,0 +1,98 @@
+@import "@/src/styles/variables";
+
+.root {
+  background-color: var(--color-section);
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  opacity: 0.2;
+}
+
+.icon svg {
+  fill: var(--color-accent);
+}
+
+.server {
+  position: absolute;
+  top: 10svh;
+  left: 10vw;
+  width: 64px;
+  height: 64px;
+
+  @media (min-width: $tablet) {
+    top: 20svh;
+    left: 10vw;
+    width: 128px;
+    height: 128px;
+  }
+}
+
+.branch {
+  position: absolute;
+  bottom: 20svh;
+  right: 30px;
+  width: 24vw;
+  height: 24vw;
+
+  @media (min-width: $tablet) {
+    bottom: 20svh;
+    right: 30px;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  @media (min-width: $laptop) {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+.terminal {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 40px;
+  bottom: 100px;
+
+  @media (min-width: $tablet) {
+    left: 40px;
+    bottom: 170px;
+  }
+}
+
+.cpu {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 100px;
+  right: 20px;
+
+  @media (min-width: $tablet) {
+    right: 40px;
+    top: 130px;
+    width: 96px;
+    height: 96px;
+  }
+
+  @media (min-width: $laptop) {
+    right: 30vw;
+  }
+}
+
+.background {
+  height: 100svh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(4px);
+}

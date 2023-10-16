@@ -1,0 +1,48 @@
+.root {
+  display: grid;
+  row-gap: 12px;
+  grid-template-areas:
+    "title points"
+    "bar bar";
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.titleWrapper {
+  grid-area: title;
+}
+
+.barWrapper {
+  grid-area: bar;
+}
+
+.pointsWrapper {
+  grid-area: points;
+  justify-self: end;
+}
+
+.title {
+  color: var(--color-default);
+  text-transform: capitalize;
+  font-size: var(--font-size-default);
+}
+
+.points {
+  color: var(--color-secondary);
+}
+
+.bar {
+  background-color: silver;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+
+.progress {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-accent);
+}

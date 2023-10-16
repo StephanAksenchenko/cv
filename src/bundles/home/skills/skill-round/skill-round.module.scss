@@ -1,0 +1,33 @@
+.title {
+  color: var(--color-default);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--font-size-default);
+}
+
+.titleWrapper {
+  margin-bottom: 24px;
+}
+
+.roundProgress {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.number {
+  color: var(--color-accent);
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: var(--font-size-default);
+  font-weight: bold;
+}

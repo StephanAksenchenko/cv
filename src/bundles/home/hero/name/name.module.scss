@@ -1,0 +1,12 @@
+@import "@/src/styles/variables";
+
+.root {
+  color: var(--color-default);
+  text-align: center;
+  font-size: var(--font-size-h1);
+  text-transform: capitalize;
+
+  @media (min-width: $laptop) {
+    text-align: left;
+  }
+}

@@ -1,0 +1,92 @@
+@import "@/src/styles/variables";
+
+.root {
+  display: grid;
+  grid-template-areas:
+    "profile"
+    "socials"
+    "position"
+    "h1"
+    "download"
+    "down";
+  grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+  row-gap: 8px;
+  padding: 72px var(--section-padding-x) 24px;
+  min-height: 100svh;
+
+  @media (min-width: $tablet) {
+    padding: 96px 24px 48px;
+    grid-template-rows: 1fr min-content min-content min-content min-content 1fr;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-areas:
+      "profile position"
+      "profile h1"
+      "profile socials"
+      "profile download"
+      "down down";
+    grid-template-rows: 1fr min-content min-content min-content 1fr;
+    column-gap: 60px;
+  }
+}
+
+.profile {
+  grid-area: profile;
+  justify-self: center;
+
+  @media (min-width: $laptop) {
+    align-self: end;
+    justify-self: end;
+  }
+}
+
+.socials {
+  grid-area: socials;
+  justify-self: center;
+
+  @media (min-width: $laptop) {
+    justify-self: start;
+    margin-bottom: 32px;
+  }
+}
+
+.position {
+  grid-area: position;
+
+  @media (min-width: $laptop) {
+    align-self: end;
+  }
+}
+
+.h1 {
+  grid-area: h1;
+  margin-bottom: 24px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: initial;
+  }
+}
+
+.download {
+  grid-area: download;
+  align-self: end;
+
+  @media (min-width: $tablet) {
+    justify-self: center;
+    width: 250px;
+  }
+
+  @media (min-width: $laptop) {
+    align-self: start;
+    justify-self: start;
+  }
+}
+
+.down {
+  grid-area: down;
+  justify-self: center;
+  align-self: end;
+}

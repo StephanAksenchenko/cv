@@ -1,0 +1,9 @@
+@import "@/src/styles/variables";
+
+.root {
+  font-size: var(--font-size-h2);
+  text-align: center;
+  color: var(--color-accent);
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}

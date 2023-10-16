@@ -1,0 +1,13 @@
+.content {
+  border: 4px dashed var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.text {
+  font-size: var(--font-size-default);
+  color: var(--color-default);
+}
