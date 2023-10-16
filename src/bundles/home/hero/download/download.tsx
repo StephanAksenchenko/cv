@@ -19,7 +19,7 @@ function Download({ children }: DownloadProps) {
   const locale = useCurrentLocale();
 
   return (
-    <a href={cvLink[locale]} className={css.download}>
+    <a href={cvLink[locale]} target="_blank" className={css.download}>
       {children}
       <DownloadIcon />
     </a>
