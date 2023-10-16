@@ -19,5 +19,11 @@ export async function generateMetadata({
   return {
     title: dict[locale].home.meta.title,
     description: dict[locale].home.meta.description,
+    openGraph: {
+      title: dict[locale].home.meta.title,
+      description: dict[locale].home.meta.description,
+      url: "https://aksenchenko.dev",
+      type: "website",
+    },
   };
 }
