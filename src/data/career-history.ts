@@ -38,14 +38,6 @@ const careerHistory = [
         id: 1,
         text: "I led the design and development of a robust and user-friendly system for generating documentation and contracts.",
       },
-      {
-        id: 2,
-        text: "User-Friendly Interfaces: I ensured that the system's user interfaces were intuitive and easy to navigate",
-      },
-      {
-        id: 3,
-        text: "Documentation Customization: I implemented features that allowed for customization of generated documents",
-      },
     ],
   },
 ];
